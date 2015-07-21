@@ -1,0 +1,21 @@
+.page-mask { 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+        /*
+	background: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/90/90096.png?1209844066') repeat;  
+	*/
+        background: #fff;
+        z-index: 99999;
+}
+
+
+.spinner img {
+	//background: url(../img/flat-loader.gif);
+        width: 128px;
+  	height: 128px;
+  	position: absolute;
+  	left: 50%;
+  	margin: -64px 0 0 -64px;
+  	top: 50%;
+}
