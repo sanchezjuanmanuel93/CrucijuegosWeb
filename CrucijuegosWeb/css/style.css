@@ -1102,12 +1102,15 @@ div.content-box.big div.content-box-info p {
 /*-------------------------------------------------------*/
 /* 12. Pricing Section
 /*-------------------------------------------------------*/
-ul.plan li:hover{
-    font-weight: bold;
+
+ul.plan li{
+    font-size: 16px;
 }
 
 .fa.fa-check-square-o.fa-2x{
     float:right;
+    margin-left: 3px;
+    /* font-size: 2em; */
 }
 
 .fa.fa-check-square-o.fa-2x:hover{
@@ -1130,6 +1133,7 @@ ul.plan li:hover{
 }
 .flat .plan li.plan-price {
   border-top: 0;
+  font-size: 20px;
 }
 .flat .plan li.plan-name {
   padding: 15px;
