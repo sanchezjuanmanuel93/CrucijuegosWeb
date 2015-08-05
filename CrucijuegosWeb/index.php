@@ -1,8 +1,12 @@
+
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 <head>
+<?php
+    header('X-Frame-Options: SAMEORIGIN');
+?>
       <meta charset="utf-8">
       <title>Crucijuegos</title>
       <meta name="description" content="Pagina oficial de CRUCIJUEGOS">
@@ -217,7 +221,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                           <div class="col-md-3 wow fadeInDown">
                                                 <div class="fun-box">
                                                       <i class="fa fa-globe"></i>
-                                                      <span class="fun" data-from="0" data-to="10" data-speed="6000" data-refresh-interval="50"></span>
+                                                      <span class="fun" data-from="0" data-to="12" data-speed="6000" data-refresh-interval="50"></span>
                                                       <p>Provincias</p>
                                                 </div>
                                           </div>
@@ -339,7 +343,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[jacinto]" href="img/salas/jac09.jpg"></a>
                                             <a rel="prettyPhoto[jacinto]" href="img/salas/jac10.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/W2mAO?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-jacinto]" title="Jacinto Rios - Libertad 1100"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/szjTJ7?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-jacinto]" title="Jacinto Rios - Libertad 1100"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Jacinto Rios</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -363,7 +367,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[formosa]" href="img/salas/for05.jpg"></a>
                                             <a rel="prettyPhoto[formosa]" href="img/salas/for06.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/r7WdV?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-formosa]" title="Formosa - Av. Juan D. Perón 757 "><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/MZIe7t?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-formosa]" title="Formosa - Av. Juan D. Perón 757 "><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Formosa</h3>
                                         <h4>Hipermercado Cáceres</h4>
@@ -387,7 +391,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[limite]" href="img/salas/lim05.jpg"></a>
 
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/LJKrP?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-chaco]" title="Ruta nº 16 Nicolás Avellaneda y Doctor Savin"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/6aHvLb?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-chaco]" title="Ruta nº 16 Nicolás Avellaneda y Doctor Savin"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Resistencia</h3>
                                         <h4>El Limite Bar & Bowling</h4>
@@ -413,7 +417,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[misiones]" href="img/salas/pos05.jpg"></a>
                                             <a rel="prettyPhoto[misiones]" href="img/salas/pos06.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/TaKzn?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-misiones]" title="Posadas - Bolivar 1979 - Local 43"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/dCbyyn?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-misiones]" title="Posadas - Bolivar 1979 - Local 43"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Posadas</h3>
                                         <h4>Posadas Plaza Shopping</h4>
@@ -436,7 +440,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[resistencia]" href="img/salas/res04.jpg"></a>
                                             <a rel="prettyPhoto[resistencia]" href="img/salas/res05.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/LJKrP?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-resistencia]" title="Ruta nº 16 Nicolás Avellaneda y Doctor Savin"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/6aHvLb?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-resistencia]" title="Ruta nº 16 Nicolás Avellaneda y Doctor Savin"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Resistencia</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -461,7 +465,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[rosario]" href="img/salas/ros06.jpg"></a>
                                             <a rel="prettyPhoto[rosario]" href="img/salas/ros07.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/nMNbl?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-rosario2]" title="Bv. Oroño 6000"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/bhJHWz?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-rosario2]" title="Bv. Oroño y Av. Battle y Ordoñez"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Rosario</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -486,7 +490,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[salta]" href="img/salas/sal06.jpg"></a>
                                             <a rel="prettyPhoto[salta]" href="img/salas/sal07.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/hBkrm?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-salta]" title="Salta - Av.Tabella y Ex. Combatientes de Malvinas"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/8sX2Du?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-salta]" title="Salta - Av.Tabella y Ex. Combatientes de Malvinas"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Salta</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -509,7 +513,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[san-juan]" href="img/salas/san05.jpg"></a>
                                             <a rel="prettyPhoto[san-juan]" href="img/salas/san06.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/j3KWa?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-san-juan]" title="San Juan - Scalabrini Ortiz y Circunvalación"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/ISakfA?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-san-juan]" title="San Juan - Scalabrini Ortiz y Circunvalación"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>San Juan</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -530,7 +534,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[Santiago-Del-Estero]" href="img/salas/sde04.jpg"></a>
                                             <a rel="prettyPhoto[Santiago-Del-Estero]" href="img/salas/sde05.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/DJZqf?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-sde]" title="Santiago Del Estero - Aut. Júan D. Perón s/n"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/YRUZeY?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-sde]" title="Santiago Del Estero - Aut. Júan D. Perón s/n"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Santiago Del Estero</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -555,7 +559,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[tucuman1]" href="img/salas/tuc106.jpg"></a>
                                             <a rel="prettyPhoto[tucuman1]" href="img/salas/tuc107.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/sqWfN?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-tucu1]" title="Tucuman - Av. Roca 3450"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/MDmU4s?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-tucu1]" title="Tucuman - Av. Roca 3450"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Tucuman I</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -578,7 +582,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[tucuman2]" href="img/salas/tuc205.jpg"></a>
                                             <a rel="prettyPhoto[tucuman2]" href="img/salas/tuc206.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/4vp2h?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-tucu2]" title="Tucuman - Suipacha y Castelar. Acceso Norte"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/sXLkQ0?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-tucu2]" title="Tucuman - Suipacha y Castelar. Acceso Norte"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Tucuman II</h3>
                                         <h4>Hipermercado Libertad</h4>
@@ -600,7 +604,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                             <a rel="prettyPhoto[villa]" href="img/salas/vil04.jpg"></a>
                                             <a rel="prettyPhoto[villa]" href="img/salas/vil05.jpg"></a>
                                         </span>
-                                        <span class="RoundBg"><a href="https://goo.gl/maps/5HRlC?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-villa]" title="Villa Maria - Ruta 158 km 155"><i class="fa fa-link"></i></a>
+                                        <span class="RoundBg"><a href="https://goo.gl/N2qLuv?iframe=true&width=600&height=450" rel="prettyPhoto[iframe-villa]" title="Villa Maria - Ruta 158 km 155"><i class="fa fa-link"></i></a>
                                         </span>
                                         <h3>Villa Maria</h3>
                                         <h4>Paseo Villa María</h4>
@@ -705,6 +709,9 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                                 <li>
                                                       <i class="fa fa-check-square-o fa-2x"></i> Juegos recreativos con coordinador y body painting
                                                 </li>
+                                                <li>
+                                                      <i class="fa fa-check-square-o fa-2x"></i>Cobertura médica
+                                                </li>
                                                 <li class="plan-action">
                                                       <a href="#section7" class="btn btn-2 btn-2c">Consultá!</a>
                                                 </li>
@@ -739,7 +746,10 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                                 </li>
                                                 <li>
                                                       <i class="fa fa-check-square-o fa-2x"></i> Juegos recreativos con coordinador y body painting
-                                                </li>                                                
+                                                </li>              
+                                                <li>
+                                                      <i class="fa fa-check-square-o fa-2x"></i>Cobertura médica
+                                                </li>
                                                 <li class="plan-action">
                                                       <a href="#section7" class="btn btn-2 btn-2c">Consultá!</a>
                                                 </li>
@@ -766,7 +776,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                           <div class="clearfix"></div>
 
                                           <div class="col-md-12 sub-title text-center light wow slideInRight">
-                                                <h3>Great designs are made by excellent use of white space, and plenty of it!</h3>
+                                                <h3>Encontra las ultimas novedades y las promociones más divertidas</h3>
                                           </div>
                                     </div>
                                     <!-- /Title row -->
@@ -792,7 +802,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
                                                                             <!-- 900x400 -->
                                                                               <img src="img/novedades/n001.jpg" class="img-responsive" />  
                                                                               <p>
-                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                                     Pasá por nuestras salas y llevate una raspadita. Todas tienen premio, descubri el tuyo!
                                                                               </p>
                                                                               <div class="testimonials-arrow"></div>
 

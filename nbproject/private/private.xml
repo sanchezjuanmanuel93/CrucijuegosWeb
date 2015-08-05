@@ -5,6 +5,8 @@
         <group>
             <file>file:/var/www/CrucijuegosWeb/CrucijuegosWeb/js/custom.js</file>
             <file>file:/var/www/CrucijuegosWeb/CrucijuegosWeb/css/style.css</file>
+            <file>file:/var/www/CrucijuegosWeb/CrucijuegosWeb/.htaccess</file>
+            <file>file:/var/www/CrucijuegosWeb/CrucijuegosWeb/prueba.html</file>
             <file>file:/var/www/CrucijuegosWeb/CrucijuegosWeb/index.html</file>
         </group>
     </open-files>

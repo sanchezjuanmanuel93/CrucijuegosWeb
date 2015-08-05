@@ -4,12 +4,17 @@
 	#RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 	#RewriteRule ^(.*)$ http://%1/$1 [R=301]
 	
-	ErrorDocument 403 http://estacion1/ecom_crucijuegos/salas/esp/error.php
-	ErrorDocument 404 http://localhost:8383/CrucijuegosWeb/index.html
-	ErrorDocument 500 http://estacion1/ecom_crucijuegos/salas/esp/error.php
+	ErrorDocument 403 http://www.crucijuegos.com/salas/esp/index.php
+	ErrorDocument 404 http://www.crucijuegos.com/salas/esp/index.php
+	ErrorDocument 500 http://www.crucijuegos.com/salas/esp/index.php
+	
+	RewriteCond %{REQUEST_URI} .[^.]+/-.[^.]+.php [NC]
+	Rewriterule ^(.*)\/.[^.]+.php$ $1/index.php
+	
+	RewriteCond %{REQUEST_URI} ([0-9]+)s-.+ [NC]
+	Rewriterule ^(.*)\/([0-9]+)s-.+ $1/servicios.php?id=$2 [QSA]
+	
+	RewriteCond %{REQUEST_URI} ([0-9]+)n-.+ [NC]
+	Rewriterule ^(.*)\/([0-9]+)n-.+ $1/noticias-ampliacion.php?id=$2 [QSA]
 	
 </IfModule>
-<IfModule mod_headers.c>
-  Header always append X-Frame-Options SAMEORIGIN
-</IfModule>
-
