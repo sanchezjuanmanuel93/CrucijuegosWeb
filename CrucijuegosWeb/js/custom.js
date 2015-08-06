@@ -92,7 +92,7 @@ Drop Down Menu Fade Effect
             cycleOptions: {
                 fx: 'fade',
                 speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-                timeout: 0,
+                timeout: 4000,
                 prev: '#slider_left',
                 next: '#slider_right',
                 pause: 1,

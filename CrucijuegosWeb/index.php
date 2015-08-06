@@ -21,10 +21,12 @@
       <!-- Library CSS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="css/team-member.css" media="screen">
       <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
       <link rel="stylesheet" href="css/animations.css" media="screen">
+      <!-- No Usado 
       <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+      <link rel="stylesheet" href="css/team-member.css" media="screen">      
+      -->
       <link rel="stylesheet" href="css/bootstrap-social.css" media="screen">
       
       <!-- Theme CSS -->
@@ -68,7 +70,7 @@
                   <div class="slider-container">
                         <div id="fullscreen-slider">
                               <div>
-                                    <img src="img/slider/bg1.jpg" alt="" />
+                                    <img src="img/slider/bg1-2.jpg" alt="" />
                                     <div class="bg-overlay">
                                           <div class="slide-content light">
                                                 <div class="align-center">
@@ -82,7 +84,7 @@
                                     </div>
                               </div>
                               <div>
-                                    <img src="img/slider/bg2.jpg" alt="" />
+                                    <img src="img/slider/bg2-2.jpg" alt="" />
                                     <div class="bg-overlay">
                                           <div class="slide-content light">
                                                 <div class="align-center">
@@ -97,7 +99,7 @@
                                     </div>
                               </div>
                               <div>
-                                    <img src="img/slider/bg3.jpg" alt="" />
+                                    <img src="img/slider/bg3-2.jpg" alt="" />
                                     <div class="bg-overlay">
                                           <div class="slide-content light">
                                                 <div class="align-center">
@@ -954,7 +956,7 @@ Las Salas son las más visitadas del país ya que transitan por año más de 3.0
       </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/jquery-migrate-1.0.0.js"></script>
-      <script src="js/jquery-ui.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.parallax.js"></script>
       <script src="js/jquery.hparallax.js"></script>
