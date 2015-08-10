@@ -23,10 +23,10 @@
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
       <link rel="stylesheet" href="css/animations.css" media="screen">
-      <!-- No Usado 
+
       <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
       <link rel="stylesheet" href="css/team-member.css" media="screen">      
-      -->
+
       <link rel="stylesheet" href="css/bootstrap-social.css" media="screen">
       
       <!-- Theme CSS -->
