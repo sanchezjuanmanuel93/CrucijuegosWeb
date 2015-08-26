@@ -1081,7 +1081,7 @@ div.content-box.big div.content-box-info p {
 }
 
 .subscription-wrap {
-    background: url('../img/plx4.jpg') 50% 0 no-repeat fixed;
+    background: url('../img/contacto3.jpg') 50% 0 no-repeat fixed;
 }
 
 .fun-wrap {
@@ -1807,7 +1807,7 @@ ul.plan li{
 /*-------------------------------------------------------*/
 
 #signup .subEmail {
-    width:60%;
+    //width:20%;
 }
 
 #signup input {
@@ -1824,6 +1824,15 @@ ul.plan li{
     color:#ccc;
 }
 
+#signup .sltSalas{
+      // width:40%; 
+}
+#signup label{
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 900px;
+    text-transform: none;
+}
 
 
 /*-------------------------------------------------------*/
