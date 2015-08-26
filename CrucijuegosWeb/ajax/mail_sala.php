@@ -71,10 +71,16 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
             $mail->Body = "Éste correo contiene adjunto un curriculum"; // body
 
             $mail->AddAttachment($_FILES['curriculum']['tmp_name']); // attach uploaded file   
-
-            $response_array['status'] = 'success';    
             
-            $res = "El curriculum se ha enviado con exito!";
+            if(!$mail->Send()) {
+                $res = $mail->ErrorInfo;
+            } else {
+                $res = "El curriculum se ha enviado con exito!";
+                $response_array['status'] = 'success';
+            }
+                
+            
+            
         }
         else
         {
