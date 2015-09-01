@@ -103,7 +103,6 @@ ul.why li:before {
 }
 
 
-
 /*-------------------------------------------------------*/
 /* 2. Form code
 /*-------------------------------------------------------*/
@@ -1088,6 +1087,9 @@ div.content-box.big div.content-box-info p {
     background: url('../img/background/bg4.jpg') 50% 0 no-repeat fixed;
 }
 
+.fun-wrap.subscription-wrap {
+    background: url('../img/contacto3.jpg') 50% 0 no-repeat fixed;
+}
 
 .parallax-overlay {
     /* background: rgba(22, 26, 72, 0.6); */
@@ -1839,7 +1841,7 @@ ul.plan li{
 /* 21. Contact form section
 /*-------------------------------------------------------*/
 
-#contact input {
+#contact input,select {
     margin-bottom: 20px;
 }
 
@@ -1849,6 +1851,21 @@ ul.plan li{
 }
 
 #contact .btn {
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#signup input {
+    margin-bottom: 20px;
+}
+
+#signup textarea {
+    height: 172px;
+    resize: none;
+}
+
+#signup .btn {
     padding: 10px 40px;
     margin-top: 20px;
     margin-bottom:20px;
@@ -2502,13 +2519,17 @@ ol.commentlist li:first-child {
         float: none !important;
     }
 
-    #signup .subEmail {
+    #signup .form-control, textarea,select, #sala, #mensaje{
         width: 90%;
+        margin: auto;
     }
 
     #signup input {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    #contact select{
+        margin-bottom: 20px;
     }
 
 
@@ -2616,7 +2637,11 @@ ol.commentlist li:first-child {
     }
 }
 
+@media (min-width: 565px) {
+    
+}
 
+    
 @media (max-width: 767px) {
 
     .posts-block {
