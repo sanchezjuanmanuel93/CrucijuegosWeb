@@ -66,10 +66,12 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
                 $mail->AddReplyTo($sala, "Curriculum"); // reply to address/name
                 $mail->AddAddress('sanchez.juanmy@gmail.com'); // to address
                 $mail->Subject = '[Web Crucijuegos Salas] - Curriculum'; // subject
-                $mail->Body = "Éste correo contiene adjunto un curriculum \n".$mensaje; // body
+                $mail->Body = "Sala:$sala </br> Mensaje:Éste correo contiene adjunto un curriculum \n".$mensaje; // body
                 $mail->Username = "[Crucijuegos Web] ".$nombre;
                 $mail->AddAttachment($_FILES['curriculum']['tmp_name']); // attach uploaded file 
+                $mail->Send();
                 $res = "El curriculum se ha enviado con exito!";
+                //$res = "from: $email, replay: $sala, body:$mensaje, name:$nombre, archivo:$nom"; 
                 $response_array['status'] = 'success';
             } catch (phpmailerException $e) {
               $res = $e->getMessage()." - ".$mail->ErrorInfo;
