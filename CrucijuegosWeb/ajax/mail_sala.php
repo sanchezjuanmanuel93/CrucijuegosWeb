@@ -62,12 +62,13 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
             
             try {
                 $mail = new PHPMailer(true);
+                $mail->IsHTML(true);
                 $mail->From = $email; // from
                 $mail->AddReplyTo($email, $nombre); // reply to address/name
                 $mail->AddAddress('sanchez.juanmy@gmail.com'); // to address
                 $mail->AddCC($sala);
                 $mail->Subject = '[Web Crucijuegos Salas] - Curriculum'; // subject
-                $mail->Body = "Sala :$sala \n \n Nombre: $nombre \n \n Telefono: $telefono \n \n  Mensaje: \n".$mensaje; // body
+                $mail->Body = "<h2>Sala :$sala </h2></br> <h3><b>Nombre:</b> $nombre </h3></br> <h3><b>Telefono:</b> $telefono </h3></br>  <h3><b>Mensaje:</b></br><p>".$mensaje."</p>"; // body
                 $mail->Username = "[Crucijuegos Web] ".$nombre;
                 $mail->AddAttachment($_FILES['curriculum']['tmp_name']); // attach uploaded file 
                 $mail->Send();

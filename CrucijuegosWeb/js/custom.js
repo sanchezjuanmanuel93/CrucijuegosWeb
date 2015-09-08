@@ -604,15 +604,11 @@ jQuery(document).ready(function(){
         if (isValidEmail(email) && (text.length > 50) && (name.length > 1) && isValidSala(sala) ) {
             $.ajax({
                 type: "POST",
-                url: "ajax/process.php",
+                url: "ajax/mail_contacto.php",
                 data: dataString,
                 success: function (data) {
                     $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
                     $('#contact')[0].reset();
-                    console.log(data);
-                },
-                error: function(data){
-                    console.log(data);
                 }
             });
         } else {
@@ -677,7 +673,6 @@ jQuery(document).ready(function(){
                     $('#success2').append(data.message);
                     $('#success2').fadeIn(1000).delay(3000).fadeOut(1000);
                     $('#signup')[0].reset();                    
-                    console.log(data);
                 },
                 error: function(err) {
                     $('#error2').empty();
