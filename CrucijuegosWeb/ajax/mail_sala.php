@@ -64,19 +64,21 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
                 $mail = new PHPMailer(true);
                 $mail->IsHTML(true);
                 $mail->From = $email; // from
+                $mail->FromName = $nombre;
                 $mail->AddReplyTo($email, $nombre); // reply to address/name
                 $mail->AddAddress('sanchez.juanmy@gmail.com'); // to address
                 $mail->AddCC($sala);
                 $mail->Subject = '[Web Crucijuegos Salas] - Curriculum'; // subject
                 $mail->Body = "<h2>Sala :$sala </h2></br> <h3><b>Nombre:</b> $nombre </h3></br> <h3><b>Telefono:</b> $telefono </h3></br>  <h3><b>Mensaje:</b></br><p>".$mensaje."</p>"; // body
-                $mail->Username = "[Crucijuegos Web] ".$nombre;
+                $mail->Username = $nombre;
                 $mail->AddAttachment($_FILES['curriculum']['tmp_name']); // attach uploaded file 
                 $mail->Send();
                 $res = "El curriculum se ha enviado con exito!";
                 //$res = "from: $email, replay: $sala, body:$mensaje, name:$nombre, archivo:$nom"; 
                 $response_array['status'] = 'success';
             } catch (phpmailerException $e) {
-              $res = $e->getMessage()." - ".$mail->ErrorInfo;
+                $res = $e->getMessage()." - ".$mail->ErrorInfo;
+                $response_array['status'] = 'error';  
             }   
         }
         else

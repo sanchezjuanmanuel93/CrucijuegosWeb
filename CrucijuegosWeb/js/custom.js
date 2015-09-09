@@ -601,14 +601,21 @@ jQuery(document).ready(function(){
             }
         }
 
-        if (isValidEmail(email) && (text.length > 50) && (name.length > 1) && isValidSala(sala) ) {
+        if (isValidEmail(email) && isValidSala(sala) ) {
             $.ajax({
                 type: "POST",
                 url: "ajax/mail_contacto.php",
                 data: dataString,
                 success: function (data) {
-                    $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
+                    $('#contact .success').fadeIn(1000).delay(3000).fadeOut(1000);
                     $('#contact')[0].reset();
+                    console.log(data.message);
+                },
+                error: function(error){
+                    $('#contact select').val(sala);
+                    $('#contact .error').html(error);
+                    $('#contact .error').fadeIn(1000).delay(5000).fadeOut(1000);
+                    console.log(error.message);
                 }
             });
         } else {
@@ -620,17 +627,30 @@ jQuery(document).ready(function(){
     
     $('#curriculum').bind('change', function() {
         var ext = $('#curriculum').val().split('.').pop().toLowerCase();
-        if($.inArray(ext, ['doc','docx','pdf','odt']) == -1) {
-            if(this.files[0].size > 2097152){
-                $('#curriculum').val("");
-                $('#error2').append('La extención del archivo debe ser .Doc/.Docx/.PDF/.ODT y su tamaño menor a 2MB ');
-                $('#error2').fadeIn(1000).delay(5000).fadeOut(1000); 
-            }
+        if($.inArray(ext, ['doc','docx','pdf','odt']) == -1 || this.files[0].size > 2097152) {
+            $('#curriculum').val("");
+            $('#error2').append('La extención del archivo debe ser .Doc/.Docx/.PDF/.ODT y su tamaño menor a 2MB ');
+            $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
         }
         
     });
     
     
+    var text_max = 300;
+    $('#contact .count_message').html(text_max + ' caracteres restantes');
+    $('#contact textarea').keyup(function() {
+        var text_length = $(this).val().length;
+        var text_remaining = text_max - text_length;
+        $('#contact .count_message').html(text_remaining + ' caracteres restantes');
+    });    
+    
+    var text_max2 = 500;
+        $('#signup .count_message').html(text_max2 + ' caracteres restantes');
+        $('#signup textarea').keyup(function() {
+            var text_length = $('#signup textarea').val().length;
+            var text_remaining = text_max2 - text_length;
+            $('#signup .count_message').html(text_remaining + ' caracteres restantes');
+        });
     
     $("#signup").submit(function (e) {
         e.preventDefault();
@@ -658,6 +678,9 @@ jQuery(document).ready(function(){
             var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
             return pattern.test(emailAddress);
         };
+        
+
+
 
         if (isValidEmail(email) && sala>0 && sala<15 && $('#curriculum').length > 0) {
             $.ajax({
@@ -675,12 +698,16 @@ jQuery(document).ready(function(){
                     $('#signup')[0].reset();                    
                 },
                 error: function(err) {
+                    $('#signup select').val(sala);
                     $('#error2').empty();
                     $('#error2').append(err.message);
                     $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
                 }
             });
         } else {
+            $('#signup select').val(sala);
+            $('#error2').empty();
+            $('#error2').append("Todos los campos deben estar completos");            
             $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
         }
 

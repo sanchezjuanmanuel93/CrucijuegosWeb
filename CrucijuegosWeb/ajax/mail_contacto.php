@@ -61,17 +61,18 @@ $res = "Mensaje";
                     $mail = new PHPMailer(true);
                     $mail->IsHTML(true);
                     $mail->From = $email; // from
+                    $mail->FromName = $name;
                     $mail->AddReplyTo($email, $name); // reply to address/name
                     $mail->AddAddress($to); // to address
                     $mail->Subject = '[Web Crucijuegos Salas] - Contacto'; // subject
                     $mail->Body = $message;
-                    $mail->Username = "[Crucijuegos Web] ".$name;
+                    $mail->Username = $name;
                     $mail->Send();
                     $response_array['status'] = 'success';
                     $res = "La consulta fue enviada correctamente!";
-                    $response_array['status'] = 'success';
             } catch (Exception $ex) {
                 $res = $e->getMessage()." - ".$mail->ErrorInfo;
+                $response_array['status'] = 'error'; 
             }
         }else{
             $res = "No se seleccionó ninguna sala";
@@ -81,8 +82,7 @@ $res = "Mensaje";
     {
         $res = "Algun campo se encuentra vacio";
         $response_array['status'] = 'error';
-    }
-    
+    }    
     $response_array['message'] = $res;  
     echo json_encode($response_array);
 ?>

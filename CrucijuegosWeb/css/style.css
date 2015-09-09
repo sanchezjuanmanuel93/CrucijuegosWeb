@@ -2531,7 +2531,13 @@ ol.commentlist li:first-child {
     #contact select{
         margin-bottom: 20px;
     }
-
+    /*
+    #contact .count_message{
+        margin-top:2px;
+        float: left;
+        color: red;
+    }
+    */
 
 
 }
