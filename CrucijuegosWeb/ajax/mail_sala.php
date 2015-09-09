@@ -62,10 +62,10 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
             
             try {
                 $mail = new PHPMailer(true);
+                $mail->AddReplyTo($email, $nombre); // reply to address/name
                 $mail->IsHTML(true);
                 $mail->From = $email; // from
                 $mail->FromName = $nombre;
-                $mail->AddReplyTo($email, $nombre); // reply to address/name
                 $mail->AddAddress('sanchez.juanmy@gmail.com'); // to address
                 $mail->AddCC($sala);
                 $mail->Subject = '[Web Crucijuegos Salas] - Curriculum'; // subject

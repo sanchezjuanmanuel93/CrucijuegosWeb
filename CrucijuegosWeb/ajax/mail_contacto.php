@@ -59,10 +59,10 @@ $res = "Mensaje";
                     $message = "<html><body><h2>Sala: ".$sucursal."</h2></br><h3>Nombre: ".$name."</h3></br><b>Email: "."$email"."</><p>Mensaje: ".$text."</p></body></html>";
             
                     $mail = new PHPMailer(true);
+                    $mail->AddReplyTo($email, $name); // reply to address/name
                     $mail->IsHTML(true);
                     $mail->From = $email; // from
                     $mail->FromName = $name;
-                    $mail->AddReplyTo($email, $name); // reply to address/name
                     $mail->AddAddress($to); // to address
                     $mail->Subject = '[Web Crucijuegos Salas] - Contacto'; // subject
                     $mail->Body = $message;
