@@ -11,7 +11,7 @@ $sucursal = "";
 $res = "Mensaje";
     if( isset($subject) && isset($name) && isset($text) ){
         if($sala != 0){
-            try{
+
                     switch ($sala) {
                                    case 1:
                                        $sucursal = "Resistencia";
@@ -56,8 +56,8 @@ $res = "Mensaje";
                                        $sucursal = "Tucumán 2";
                                        break;
                                 }  
-                    $message = "<html><body><h2>Sala: ".$sucursal."</h2></br><h3>Nombre: ".$name."</h3></br><b>Email: "."$email"."</><p>Mensaje: ".$text."</p></body></html>";
-            
+                    $message = "<html><body><h2>Sala: ".$sucursal."</h2></br><h3><b>Asunto: </b> ".$subject."</h3></br><h3><b>Nombre:</b> ".$name."</h3></br><b>Email: "."$email"."</><p>Mensaje: ".$text."</p></body></html>";
+            try{
                     $mail = new PHPMailer(true);
                     $mail->AddReplyTo($email, $name); // reply to address/name
                     $mail->IsHTML(true);
@@ -67,9 +67,14 @@ $res = "Mensaje";
                     $mail->Subject = '[Web Crucijuegos Salas] - Contacto'; // subject
                     $mail->Body = $message;
                     $mail->Username = $name;
-                    $mail->Send();
-                    $response_array['status'] = 'success';
-                    $res = "La consulta fue enviada correctamente!";
+                    if(!$mail->Send()){
+                        $response_array['status'] = 'error';
+                        $res = "Fallo el envio del email"; 
+                    }else
+                    {
+                        $response_array['status'] = 'success';
+                        $res = "La consulta fue enviada correctamente!";
+                    }
             } catch (Exception $ex) {
                 $res = $e->getMessage()." - ".$mail->ErrorInfo;
                 $response_array['status'] = 'error'; 

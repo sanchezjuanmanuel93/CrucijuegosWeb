@@ -578,6 +578,18 @@ jQuery(document).ready(function(){
 /*----------------------------------------------------*/
 /*  Contact Form Section
 /*----------------------------------------------------*/
+    /*
+    function mostrarMensaje(data){
+        if(data.status==200){
+            alert("hola");
+        }
+        else
+        {
+            alert("chau");
+        }
+    }
+    */
+
     $("#contact").submit(function (e) {
         e.preventDefault();
         var name = $("#name").val();
@@ -606,16 +618,16 @@ jQuery(document).ready(function(){
                 type: "POST",
                 url: "ajax/mail_contacto.php",
                 data: dataString,
-                success: function (data) {
+                success: function (data,status) {
                     $('#contact .success').fadeIn(1000).delay(3000).fadeOut(1000);
                     $('#contact')[0].reset();
-                    console.log(data.message);
+                    console.log(status);
                 },
                 error: function(error){
                     $('#contact select').val(sala);
                     $('#contact .error').html(error);
                     $('#contact .error').fadeIn(1000).delay(5000).fadeOut(1000);
-                    console.log(error.message);
+                    console.log(error);
                 }
             });
         } else {

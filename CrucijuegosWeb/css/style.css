@@ -1088,7 +1088,7 @@ div.content-box.big div.content-box-info p {
 }
 
 .fun-wrap.subscription-wrap {
-    background: url('../img/contacto3.jpg') 50% 0 no-repeat fixed;
+    background: url('../img/crucijuegos/trabaja-con-nosotros2.jpg') 50% 0 no-repeat fixed;
 }
 
 .parallax-overlay {
@@ -2647,6 +2647,7 @@ ol.commentlist li:first-child {
     
 }
 
+
     
 @media (max-width: 767px) {
 
@@ -2677,6 +2678,8 @@ ol.commentlist li:first-child {
         margin-top:200px;
     }
 }
+
+
 @media (max-height: 500px){
     .fix-facebook{
         bottom:100px !important;
@@ -2688,9 +2691,16 @@ ol.commentlist li:first-child {
 
 a.scrollup.fix-twitter {} 
     .up{
-        bottom:5px !important;
+        bottom:35px !important;
+        rigth: 35px;
     }
+    
+    .welcome{
+        display: none;
+    }
+    
 }
+
 
 .main-cont{
     background-color: white;
