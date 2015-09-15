@@ -578,17 +578,6 @@ jQuery(document).ready(function(){
 /*----------------------------------------------------*/
 /*  Contact Form Section
 /*----------------------------------------------------*/
-    /*
-    function mostrarMensaje(data){
-        if(data.status==200){
-            alert("hola");
-        }
-        else
-        {
-            alert("chau");
-        }
-    }
-    */
 
     $("#contact").submit(function (e) {
         e.preventDefault();
@@ -694,34 +683,34 @@ jQuery(document).ready(function(){
 
 
 
-        if (isValidEmail(email) && sala>0 && sala<15 && $('#curriculum').length > 0) {
-            $.ajax({
-                type: "POST",
-                url: "ajax/mail_sala.php",
-                data: sentData,
-                dataType: 'json',
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    $('#success2').empty();
-                    $('#success2').append(data.message);
-                    $('#success2').fadeIn(1000).delay(3000).fadeOut(1000);
-                    $('#signup')[0].reset();                    
-                },
-                error: function(err) {
-                    $('#signup select').val(sala);
-                    $('#error2').empty();
-                    $('#error2').append(err.message);
-                    $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
-                }
-            });
-        } else {
-            $('#signup select').val(sala);
-            $('#error2').empty();
-            $('#error2').append("Todos los campos deben estar completos");            
-            $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
-        }
+    if (isValidEmail(email) && (sala > 0) && (sala < 15) && ($('#curriculum').get(0).files.length > 0)) {
+        $.ajax({
+            type: "POST",
+            url: "ajax/mail_sala.php",
+            data: sentData,
+            dataType: 'json',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                $('#success2').empty();
+                $('#success2').append(data.message);
+                $('#success2').fadeIn(1000).delay(3000).fadeOut(1000);
+                $('#signup')[0].reset();
+            },
+            error: function (err) {
+                $('#signup select').val(sala);
+                $('#error2').empty();
+                $('#error2').append(err.message);
+                $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
+            }
+        });
+    } else {
+        $('#signup select').val(sala);
+        $('#error2').empty();
+        $('#error2').append("Todos los campos deben estar completos");
+        $('#error2').fadeIn(1000).delay(5000).fadeOut(1000);
+    }
 
         return false;
     });
