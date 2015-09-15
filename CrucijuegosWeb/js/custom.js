@@ -616,7 +616,7 @@ jQuery(document).ready(function(){
         if (isValidEmail(email) && isValidSala(sala) ) {
             $.ajax({
                 type: "POST",
-                url: "ajax/mail_contacto.php",
+                url: "ajax/process.php",
                 data: dataString,
                 success: function (data,status) {
                     $('#contact .success').fadeIn(1000).delay(3000).fadeOut(1000);

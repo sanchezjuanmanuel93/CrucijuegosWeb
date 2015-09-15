@@ -78,7 +78,7 @@ if($tipo == 'application/pdf' || $tipo == 'application/vnd.oasis.opendocument.te
                     }else
                     {
                         $response_array['status'] = 'success';
-                        $res = "La consulta fue enviada correctamente!";
+                        $res = "El curriculum fué enviado correctamente!";
                     }
             } catch (phpmailerException $e) {
                 $res = $e->getMessage()." - ".$mail->ErrorInfo;
