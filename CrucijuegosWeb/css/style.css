@@ -1041,7 +1041,10 @@ div.content-box.big div.content-box-info p {
 }
 
 .texture-layer, .bg-overlay {
+    /*
     filter: blur(6px);
+    -moz-filter: blur(0);
+    */
     background: url(../img/texture_layer.png) repeat;
 }
 
