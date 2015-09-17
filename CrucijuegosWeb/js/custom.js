@@ -331,12 +331,6 @@ Drop Down Menu Fade Effect
             popup: false
             },
             {
-            latitude: -27.4159722,
-            longitude: -58.9621492,
-            html: "<h4>Resistencia</h4><h5>El Limite Bar & Bowling</h5><p>Av. Ferre y Chacabuco</p>",
-            popup: false
-            },
-            {
             latitude: -27.3668563,
             longitude: -55.8956427,
             html: "<h4>Posadas</h4><h5>Posadas Plaza Shopping</h5><p>Bolivar 1979 - Local 43</p>",
@@ -395,7 +389,27 @@ Drop Down Menu Fade Effect
             longitude: -63.2437617,
             html: "<h4>Villa Maria</h4><h5>Paseo Villa María</h5><p>Ruta 158 km 155</p>",
             popup: false
+            },
+            {
+            latitude: -32.9776837,
+            longitude: -60.6435695,
+            html: "<h4>Rosario</h4><h5>Hipermercado La Reina</h5><p>San Martin 3419</p>",
+            popup: false
+            },
+            {
+            latitude: -25.31654,
+            longitude: -57.5709782,
+            html: "<h4>Asuncion</h4><h5>Shopping Multiplaza</h5><p>Av Eusebio Ayala Km 5 Bloque B 2do piso</p>",
+            popup: false
+            },
+            {
+            latitude: -25.31654,
+            longitude: -57.5709782,
+            html: "<h4>Asuncion</h4><h5>Shopping San Lorenzo</h5><p>Ruta 2km 15 Mcal. José F. Estigarriba nº 4041 Local 27 y 28</p>",
+            popup: false
             }
+            
+    
         ]
     });
 
