@@ -403,13 +403,11 @@ Drop Down Menu Fade Effect
             popup: false
             },
             {
-            latitude: -25.31654,
-            longitude: -57.5709782,
+            latitude: -25.2932149,
+            longitude: -57.6005536,
             html: "<h4>Asuncion</h4><h5>Shopping San Lorenzo</h5><p>Ruta 2km 15 Mcal. José F. Estigarriba nº 4041 Local 27 y 28</p>",
             popup: false
             }
-            
-    
         ]
     });
 
