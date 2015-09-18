@@ -1,5 +1,7 @@
 <?php
-$to = "sanchez.juanmy@gmail.com";
+$to1 = "sanchez.juanmy@gmail.com";
+$to2 = "rtecce@crucijuegos.com";
+$to3 = "lorena@crucijuegos.com";
 $subject = $_POST['subject'];
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -56,6 +58,7 @@ $res = "Mensaje";
                                        break;
                                 }            
                 $message = "<html><body><h2>Sala: ".$sucursal."</h2></br><h3>Nombre: ".$name."</h3></br><b>Email: "."$email"."</><p>Mensaje: ".$text."</p></body></html>";
+                $to = to1.",".to2.",".",".to3;
                 mail($to, $subject, $message, $headers);
                 $res = "La consulta fue enviada correctamente!";
                 //$res = $to." ".$subject." ".$message." ".$headers;
