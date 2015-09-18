@@ -4,6 +4,7 @@ require_once('PHPMailer/class.phpmailer.php');
 $to = "sanchez.juanmy@gmail.com";
 $to2 = "rtecce@crucijuegos.com";
 $to3 = "lorena@crucijuegos.com";
+$to4 = "german@crucijuegos.com";
 $id = $_POST['sucursales'];
 $mensaje = $_POST['mensaje'];
 $email = $_POST['email'];
@@ -73,6 +74,7 @@ if (isset($_FILES['curriculum'])) {
                     $mail->AddCC($sala);
                     $mail->AddCC($to2);
                     $mail->AddCC($to3);
+                    $mail->AddCC($to4);
                     $mail->Subject = '[Web Crucijuegos Salas] - Curriculum'; // subject
                     $mail->Body = "<h2>Sala :$sala </h2></br> <h3><b>Nombre:</b> $nombre </h3></br> <h3><b>Telefono:</b> $telefono </h3></br>  <h3><b>Mensaje:</b></br><p>" . $mensaje . "</p>"; // body
                     $mail->Username = $nombre;
