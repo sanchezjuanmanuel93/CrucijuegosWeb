@@ -204,6 +204,10 @@ input:focus, textarea:focus {
     background: transparent !important;
 }
 
+    .logo{
+        margin: 85px auto 10px auto;
+    }
+
 
 /*-------------------------------------------------------*/
 /* 4. Slider
@@ -584,10 +588,10 @@ ul.text-slide {
 }
 
 .navbar-custom {
-    background: url(../img/crucijuegos/top.png) center top repeat-x;
+    background: url(../img/crucijuegos/top.png) center bottom repeat-x;
     background-color: #fff;
     width: 100%;
-    min-height: 80px;
+    min-height: 70px;
     position: relative;
     border-radius: 0;
     margin-bottom: 0;
@@ -658,7 +662,9 @@ ul.navbar-right {
 
 }
 #navigation-sticky-wrapper {
-    height: 80px;
+    height: 68px;
+    position: absolute;
+    width: 100%;
 }
 
 
@@ -2701,7 +2707,21 @@ a.scrollup.fix-twitter {}
     .welcome{
         display: none;
     }
-    
+    .logo-detalle{
+        display: none;
+    }
+    .align-center{
+        vertical-align: text-top !important;
+
+    }
+    .logo{
+        margin: 85px auto 10px auto;
+    }
+    #navigation-sticky-wrapper{
+        position: absolute;
+        width: 100%;
+    }
+
 }
 
 
