@@ -11,7 +11,7 @@ $email = $_POST['email'];
 $text = $_POST['text'];
 $sala = $_POST['sala'];
 $sucursal = "";
-$headers = "Content-type: text/html; charset=iso-8859-1\r\n "."\r\n" .'From: $email' . "\r\n" . 'Reply-To: ' . $email . "\r\n" .
+$headers = "Content-type: text/html; charset=iso-8859-1\r\n "."From:" . $email . "\r\n"."Reply-To:" . $email . "\r\n" ;
 $res = "Mensaje";
 if (isset($subject) && isset($name) && isset($text)) {
     if ($sala != 0) {
@@ -60,9 +60,10 @@ if (isset($subject) && isset($name) && isset($text)) {
                     $sucursal = "Tucumán 2";
                     break;
             }
-            $message = "<html><body><h2>Sala: " . $sucursal . "</h2></br><h3>Nombre: " . $name . "</h3></br><b>Email: " . "$email" . "</><p>Mensaje: " . $text . "</p></body></html>";
+            $asunto = "[Web Crucijuegos Salas] - Contacto";
+            $message = "<html><body><h2>Sala: " . $sucursal . "</h2></br><h3>Asunto: " . $subject . "</h3></br><h3>Nombre: " . $name . "</h3></br><b>Email: " . "$email" . "</><p>Mensaje: " . $text . "</p></body></html>";
             //$to = $to1 . "," . $to2 . "," . $to3 . "," . $to4;
-            mail($to1, $subject, $message, $headers);
+            mail($to1, $asunto, $message, $headers);
             $res = "La consulta fue enviada correctamente!";
             $response_array['status'] = 'success';
         } catch (Exception $ex) {

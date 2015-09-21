@@ -622,13 +622,13 @@ jQuery(document).ready(function(){
                 success: function (data,status) {
                     $('#contact .success').fadeIn(1000).delay(3000).fadeOut(1000);
                     $('#contact')[0].reset();
-                    console.log(status);
+                    //console.log(status);
                 },
                 error: function(error){
                     $('#contact select').val(sala);
                     $('#contact .error').html(error);
                     $('#contact .error').fadeIn(1000).delay(5000).fadeOut(1000);
-                    console.log(error);
+                    //console.log(error);
                 }
             });
         } else {
