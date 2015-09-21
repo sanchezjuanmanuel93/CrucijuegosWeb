@@ -11,7 +11,7 @@ $email = $_POST['email'];
 $text = $_POST['text'];
 $sala = $_POST['sala'];
 $sucursal = "";
-$headers = "Content-type: text/html; charset=iso-8859-1\r\n "."\r\n" . 'Reply-To: ' . $email . "\r\n" .
+$headers = "Content-type: text/html; charset=iso-8859-1\r\n "."\r\n" .'From: $email' . "\r\n" . 'Reply-To: ' . $email . "\r\n" .
 $res = "Mensaje";
 if (isset($subject) && isset($name) && isset($text)) {
     if ($sala != 0) {
