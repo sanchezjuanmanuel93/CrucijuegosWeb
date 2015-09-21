@@ -62,8 +62,8 @@ if (isset($subject) && isset($name) && isset($text)) {
             }
             $asunto = "[Web Crucijuegos Salas] - Contacto";
             $message = "<html><body><h2>Sala: " . $sucursal . "</h2></br><h3>Asunto: " . $subject . "</h3></br><h3>Nombre: " . $name . "</h3></br><b>Email: " . "$email" . "</><p>Mensaje: " . $text . "</p></body></html>";
-            //$to = $to1 . "," . $to2 . "," . $to3 . "," . $to4;
-            mail($to1, $asunto, $message, $headers);
+            $to = $to1 . "," . $to2 . "," . $to3 . "," . $to4;
+            mail($to, $asunto, $message, $headers);
             $res = "La consulta fue enviada correctamente!";
             $response_array['status'] = 'success';
         } catch (Exception $ex) {
