@@ -1516,10 +1516,18 @@ ul.plan li{
     line-height: 100px
 }
 .testimonial img {
-    width: 100%;
+    //width: 100%;
+    //margin: auto;
 }
 
 /* Testimonials */
+.testimonial .item{
+    margin: auto;
+}
+
+.testimonial-content{
+    
+}
 .testimonial p {
     background: #fff;
     /* font-family: "Tangerine", "Open Sans", Arial; */
@@ -1529,6 +1537,12 @@ ul.plan li{
     margin: 0;
     padding: 27px 25px;
     text-align: center;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .our-clients .testimonial p, .our-clients .testimonials-arrow {
@@ -2689,7 +2703,7 @@ ol.commentlist li:first-child {
 }
 
 
-@media (max-height: 500px){
+@media (max-height: 640px){
     .fix-facebook{
         bottom:100px !important;
     } 

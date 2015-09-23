@@ -431,7 +431,8 @@ Drop Down Menu Fade Effect
     jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});   
     
     jQuery('.testimonials-carousel-widget').carousel({interval: 5000, pause: "hover"});
-
+    var anchoImagen = jQuery('.item .active img').width();
+    jQuery('.item.active').css({"width":anchoImagen});
 });
 
 
