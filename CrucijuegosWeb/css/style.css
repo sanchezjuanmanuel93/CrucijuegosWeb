@@ -1526,8 +1526,9 @@ ul.plan li{
 }
 
 .testimonial-content{
-    
+    margin:auto;
 }
+
 .testimonial p {
     background: #fff;
     /* font-family: "Tangerine", "Open Sans", Arial; */
