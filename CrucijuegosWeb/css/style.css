@@ -198,16 +198,21 @@ input:focus, textarea:focus {
 .site-logo {
     display: inline-block;
     line-height: 80px;
+    padding-bottom: 3px;
 }
 
 #navigation .site-logo a, #navigation .site-logo a:hover, #navigation .site-logo a:focus, #navigation .site-logo a:before, #navigation .site-logo a:after {
     background: transparent !important;
+    padding: 15;
 }
 
     .logo{
         margin: 85px auto 10px auto;
     }
 
+    .site-logo a img{
+        max-width: 258px;
+    }
 
 /*-------------------------------------------------------*/
 /* 4. Slider
@@ -2688,6 +2693,10 @@ ol.commentlist li:first-child {
         margin: 0;
         padding: 0;
         width: 95%;
+    }
+    
+    #navigation .site-logo a{
+        margin-bottom: 5px;
     }
 
 }
