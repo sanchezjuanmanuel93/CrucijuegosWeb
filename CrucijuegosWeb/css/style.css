@@ -2726,20 +2726,9 @@ a.scrollup.fix-twitter {}
     .up{
         bottom:35px !important;
         rigth: 35px;
-    }
-    
+    }    
     .welcome{
         display: none;
-    }
-    .logo-detalle{
-        display: none;
-    }
-    .align-center{
-        vertical-align: text-top !important;
-
-    }
-    .logo{
-        margin: 85px auto 10px auto;
     }
     #navigation-sticky-wrapper{
         position: absolute;
