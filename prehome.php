@@ -6,10 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="http://www.crucijuegos.com/sitefiles/css/reset.css"> <!-- Resource style -->
-        <link rel="stylesheet" href="style.css"> <!-- Resource style -->
-        <!--
-        <link rel="stylesheet" href="http://www.crucijuegos.com/sitefiles/css/style.css">  Resource style 
-        -->
+        <link rel="stylesheet" href="http://www.crucijuegos.com/sitefiles/css/style.css">
         <title>CRUCIJUEGOS</title>
     </head>
     <body>
