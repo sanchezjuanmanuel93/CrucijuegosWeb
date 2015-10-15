@@ -15,7 +15,7 @@
                 <li class="cd-single-project image-1">
                     <a href="http://www.crucijuegos.com/salas/esp/-crucijuegos.php">
                         <div class="cd-title">
-                            <img src="http://www.crucijuegos.com/productos/sitefiles/img/assets/logoNew.png"  class="img-responsive"/>
+                            <img src="http://www.crucijuegos.com/productos/sitefiles/img/assets/logoNew.png"  class="img-responsive center-block"/>
                             <h2>Salas de entretenimiento</h2>
                             <p>Visite nuestras salas de juegos: Games, Pistas de patinaje, Eventos, Cumpleaños</p>
                             <span class="btn">Ver las Salas</span>
@@ -25,7 +25,7 @@
                 <li class="cd-single-project image-2">
                     <a href="http://www.crucijuegos.com/productos/esp/-crucijuegos.php">
                         <div class="cd-title">
-                            <img src="http://www.crucijuegos.com/productos/sitefiles/img/assets/logo_crucijuegos.png"  class="img-responsive"/>
+                            <img src="http://www.crucijuegos.com/productos/sitefiles/img/assets/logo_crucijuegos.png"  class="img-responsive center-block"/>
                             <h2>Juegos de espacio público</h2>
                             <p>Conozca nuestros productos para:
                                 Municipios, hoteles, Restaurantes, Salones de fiestas y Particulares</p>
