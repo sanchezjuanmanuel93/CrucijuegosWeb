@@ -621,14 +621,14 @@ jQuery(document).ready(function(){
                 url: "ajax/process.php",
                 data: dataString,
                 success: function (data,status) {
-                    $('#contact .success').fadeIn(1000).delay(3000).fadeOut(1000);
+                    $('#contact .success').fadeIn(1000).delay(15000).fadeOut(1000);
                     $('#contact')[0].reset();
                     //console.log(status);
                 },
                 error: function(error){
                     $('#contact select').val(sala);
                     $('#contact .error').html(error);
-                    $('#contact .error').fadeIn(1000).delay(5000).fadeOut(1000);
+                    $('#contact .error').fadeIn(1000).delay(8000).fadeOut(1000);
                     //console.log(error);
                 }
             });
@@ -708,7 +708,7 @@ jQuery(document).ready(function(){
             success: function (data) {
                 $('#success2').empty();
                 $('#success2').append(data.message);
-                $('#success2').fadeIn(1000).delay(3000).fadeOut(1000);
+                $('#success2').fadeIn(1000).delay(15000).fadeOut(1000);
                 $('#signup')[0].reset();
             },
             error: function (err) {
